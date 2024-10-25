@@ -16,6 +16,9 @@ public class Contact {
 
     public int id;
 
+    public Contact() {
+    }
+
     @ColumnInfo(name = "name")
     public String name;
 
