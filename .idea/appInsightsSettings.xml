@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.upn.contactsapp" />
+                  <option name="mobileSdkAppId" value="1:818668120892:android:0d1642b1e2817ad0d00c39" />
+                  <option name="projectId" value="vj20242-cdb49" />
+                  <option name="projectNumber" value="818668120892" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

@@ -29,9 +29,12 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        Log.i("MAIN_APP (LoginActivity)",  "Login Activity started");
+
         SharedPreferences sharedPref = getSharedPreferences("com.upn.contactsapp", Context.MODE_PRIVATE);
         String token = sharedPref.getString("TOKEN", null);
-        Log.i("LoginActivity", "TOKEN: " + token);
+
+        Log.i("MAIN_APP (LoginActivity)", "Token: " + token);
 
 
         Retrofit retrofit = new Retrofit.Builder()
@@ -46,6 +49,8 @@ public class LoginActivity extends AppCompatActivity {
 
             String username = "email 1";
             String password = "password 1";
+
+            Log.i("MAIN_APP", "Login button clicked");
 
             service.authenticate(username, password).enqueue(new Callback<List<User>>() {
                 @Override
@@ -69,7 +74,8 @@ public class LoginActivity extends AppCompatActivity {
 
                 @Override
                 public void onFailure(Call<List<User>> call, Throwable t) {
-                    Log.d("LoginActivity", "Error: " + t.getMessage());
+
+                    //Log.e("LoginActivity", "Error: " + t.getMessage());
                 }
             });
 
